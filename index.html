@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir ID Card</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-image: url(bgutama.jpg);">
+    <div class="container">
+        <h1>Formulir Pengisian Data</h1>
+        <form id="dataForm">
+            <label for="name">Nama Lengkap:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="tempat tanggal lahir">Tempat Tanggal Lahir:</label>
+            <input type="text" id="dob" name="dob" required>
+
+            <label for="school">Asal Sekolah:</label>
+            <input type="text" id="school" name="school" required>
+
+            <label for="hobby">Hobi:</label>
+            <input type="text" id="hobby" name="hobby" required>
+
+            <label for="favColor">Warna Favorit:</label>
+            <input type="text" id="favColor" name="favColor" required>
+
+            <button type="submit">Kirim</button>
+        </form>
+    </div>
+
+    <div class="id-card-container" id="idCardContainer">
+        <div class="id-card" id="idCard">
+            <h2>ID Card</h2>
+            <p><strong>Nama:</strong> <span id="cardName"></span></p>
+            <p><strong>Tempat Tanggal Lahir:</strong> <span id="cardDob"></span></p>
+            <p><strong>Asal Sekolah:</strong> <span id="cardSchool"></span></p>
+            <p><string>Hobi:</string> <span id="cardHobby"></span></p>
+            <p><strong>Warna Favorit:</strong> <span id="cardFavColor"></span></p>
+        </div>
+        <button id="downloadButton">Download ID Card</button>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+
+</body>
+</html>
